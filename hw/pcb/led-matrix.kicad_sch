@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "LED Matrix")
-		(rev "Rev1")
+		(rev "RevB")
 		(company "Isaac Pawley")
 	)
 	(lib_symbols
@@ -804,6 +804,17 @@
 			)
 			(embedded_fonts no)
 		)
+	)
+	(text "These LEDs are the APTD1608LSURCK from Kingbright\nThey work with a forward current as low as 2mA (Vf = 1.75V)\nHence the large current limiting resistor...\n\n(3.3 - Vf) / 0.002 = 775Ω"
+		(exclude_from_sim no)
+		(at 52.578 50.546 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "03fd49d1-73f1-49fa-ad62-b21439f53bda")
 	)
 	(junction
 		(at 194.31 44.45)
@@ -5562,7 +5573,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "820"
 			(at 132.08 104.14 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6180,7 +6191,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "820"
 			(at 132.08 129.54 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6522,7 +6533,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "820"
 			(at 132.08 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6786,7 +6797,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "820"
 			(at 132.08 154.94 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9126,7 +9137,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "820"
 			(at 132.08 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9378,7 +9389,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "820"
 			(at 132.08 40.64 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10371,7 +10382,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "820"
 			(at 132.08 142.24 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13291,7 +13302,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "820"
 			(at 132.08 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15426,7 +15437,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "820"
 			(at 132.08 116.84 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16405,7 +16416,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "820"
 			(at 132.08 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
