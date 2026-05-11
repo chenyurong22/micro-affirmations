@@ -56,19 +56,75 @@
       "diff_pair_dimensions": [],
       "drc_exclusions": [
         [
-          "silk_edge_clearance|101609220|130679999|19fb80d8-6bbb-4330-9e64-b3d411189291|7c8ba0f4-5960-4088-88e9-b5b21fcb552f",
+          "clearance|127301500|113858527|ec104548-879f-48dc-8208-7dc768dd9116|dc4ea845-f4cd-4b0f-bf4c-4ccbfc16b3cc",
           ""
         ],
         [
-          "silk_edge_clearance|105580533|130680000|82d57448-9f6f-4612-bab0-0b979d3f8cb0|866eb6cc-d320-4c69-9721-969700df5507",
+          "clearance|127301500|114352938|8363f73c-01d9-4a68-ad14-91caa4eba88c|dc4ea845-f4cd-4b0f-bf4c-4ccbfc16b3cc",
           ""
         ],
         [
-          "silk_over_copper|101609220|130679999|7c8ba0f4-5960-4088-88e9-b5b21fcb552f|19fb80d8-6bbb-4330-9e64-b3d411189291",
+          "clearance|127301500|114853064|469f01aa-f1c7-4d62-8cf5-fb45d4812bf0|dc4ea845-f4cd-4b0f-bf4c-4ccbfc16b3cc",
           ""
         ],
         [
-          "silk_over_copper|105580533|130680000|866eb6cc-d320-4c69-9721-969700df5507|82d57448-9f6f-4612-bab0-0b979d3f8cb0",
+          "clearance|127301500|115353190|4815512d-599c-4d36-9c0f-42b80b2ed166|dc4ea845-f4cd-4b0f-bf4c-4ccbfc16b3cc",
+          ""
+        ],
+        [
+          "clearance|127301500|115853316|c7c2835c-b5d2-4d12-9684-5160cae28f32|dc4ea845-f4cd-4b0f-bf4c-4ccbfc16b3cc",
+          ""
+        ],
+        [
+          "clearance|127301500|116353442|d2dddd6b-10fd-47fe-92b8-e0fe46edd436|dc4ea845-f4cd-4b0f-bf4c-4ccbfc16b3cc",
+          ""
+        ],
+        [
+          "clearance|128698500|113858527|fd86322e-4923-44cd-997c-cf215efe5199|dc4ea845-f4cd-4b0f-bf4c-4ccbfc16b3cc",
+          ""
+        ],
+        [
+          "clearance|128698500|114352938|2e5ebe05-eaf7-47c6-a48d-ddddc1264d06|dc4ea845-f4cd-4b0f-bf4c-4ccbfc16b3cc",
+          ""
+        ],
+        [
+          "clearance|128698500|114853064|219c5f6c-5663-43f1-87d7-a90e57e5ab09|dc4ea845-f4cd-4b0f-bf4c-4ccbfc16b3cc",
+          ""
+        ],
+        [
+          "clearance|128698500|115353190|75bb91e6-2ce3-4862-b666-0ff005421568|dc4ea845-f4cd-4b0f-bf4c-4ccbfc16b3cc",
+          ""
+        ],
+        [
+          "clearance|128698500|115853316|a89e04b3-98af-4603-a313-6265172fa7d6|dc4ea845-f4cd-4b0f-bf4c-4ccbfc16b3cc",
+          ""
+        ],
+        [
+          "clearance|128698500|116353442|d0229d03-2aa6-474d-9eee-5b8735eb8772|dc4ea845-f4cd-4b0f-bf4c-4ccbfc16b3cc",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|152288964|94561035|9e1f71db-c1b6-42ef-b0de-d31ce2d56b3b|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|155150000|116500000|722a1202-e2b9-4a6b-9848-8141ffb78153|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_edge_clearance|116454819|112179999|19fb80d8-6bbb-4330-9e64-b3d411189291|7c8ba0f4-5960-4088-88e9-b5b21fcb552f",
+          ""
+        ],
+        [
+          "silk_edge_clearance|120426132|112180000|82d57448-9f6f-4612-bab0-0b979d3f8cb0|866eb6cc-d320-4c69-9721-969700df5507",
+          ""
+        ],
+        [
+          "silk_over_copper|116454819|112179999|7c8ba0f4-5960-4088-88e9-b5b21fcb552f|19fb80d8-6bbb-4330-9e64-b3d411189291",
+          ""
+        ],
+        [
+          "silk_over_copper|120426132|112180000|866eb6cc-d320-4c69-9721-969700df5507|82d57448-9f6f-4612-bab0-0b979d3f8cb0",
           ""
         ]
       ],
@@ -241,7 +297,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "Rev1"
+      "sch_revision": "RevB"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -261,7 +317,40 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_not_connected|800100|1003300|fd59c5b5-0928-4483-a471-5e32295fae8a|00000000-0000-0000-0000-000000000000|/5bc9bd8c-4e85-4538-85a6-329775c75541|/5bc9bd8c-4e85-4538-85a6-329775c75541|",
+        ""
+      ],
+      [
+        "pin_not_connected|800100|977900|00f84723-19ae-41e0-97fc-04c66d74ec10|00000000-0000-0000-0000-000000000000|/5bc9bd8c-4e85-4538-85a6-329775c75541|/5bc9bd8c-4e85-4538-85a6-329775c75541|",
+        ""
+      ],
+      [
+        "pin_to_pin|1663700|1079500|3781ae74-f9ff-40fa-b3e3-60c0f44d371d|21de1042-943c-4c31-90d6-44b880c1935f|/5bc9bd8c-4e85-4538-85a6-329775c75541/d778569a-4163-4655-ac14-1147471aedc4|/5bc9bd8c-4e85-4538-85a6-329775c75541/d778569a-4163-4655-ac14-1147471aedc4|/5bc9bd8c-4e85-4538-85a6-329775c75541/d778569a-4163-4655-ac14-1147471aedc4",
+        ""
+      ],
+      [
+        "pin_to_pin|1663700|1130300|bad918d1-0837-4449-b8fa-57d4daa9435a|75e8723a-c3f4-4263-9f3f-8e5aedd9b4d1|/5bc9bd8c-4e85-4538-85a6-329775c75541/d778569a-4163-4655-ac14-1147471aedc4|/5bc9bd8c-4e85-4538-85a6-329775c75541/d778569a-4163-4655-ac14-1147471aedc4|/5bc9bd8c-4e85-4538-85a6-329775c75541/d778569a-4163-4655-ac14-1147471aedc4",
+        ""
+      ],
+      [
+        "pin_to_pin|850900|393700|dd5462ed-39a8-4f5d-b37e-e0045d50d429|35b90ef9-3bbc-421b-8ffb-bca118db41fc|/5bc9bd8c-4e85-4538-85a6-329775c75541|/5bc9bd8c-4e85-4538-85a6-329775c75541|/5bc9bd8c-4e85-4538-85a6-329775c75541",
+        ""
+      ],
+      [
+        "pin_to_pin|850900|419100|35b90ef9-3bbc-421b-8ffb-bca118db41fc|75e8723a-c3f4-4263-9f3f-8e5aedd9b4d1|/5bc9bd8c-4e85-4538-85a6-329775c75541|/5bc9bd8c-4e85-4538-85a6-329775c75541|/5bc9bd8c-4e85-4538-85a6-329775c75541/d778569a-4163-4655-ac14-1147471aedc4",
+        ""
+      ],
+      [
+        "power_pin_not_driven|444500|393700|960eb37e-ed83-4251-89c5-db01f4708e1d|00000000-0000-0000-0000-000000000000|/5bc9bd8c-4e85-4538-85a6-329775c75541|/5bc9bd8c-4e85-4538-85a6-329775c75541|",
+        ""
+      ],
+      [
+        "power_pin_not_driven|800100|927100|fd22cb6a-492d-4f37-8d3c-8e2e862a3794|00000000-0000-0000-0000-000000000000|/5bc9bd8c-4e85-4538-85a6-329775c75541|/5bc9bd8c-4e85-4538-85a6-329775c75541|",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -542,7 +631,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.5,
+        "track_width": 0.3,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3
@@ -556,7 +645,7 @@
     "netclass_patterns": [
       {
         "netclass": "High Current",
-        "pattern": "+3V0"
+        "pattern": "+3V3"
       },
       {
         "netclass": "Default",
@@ -569,6 +658,10 @@
       {
         "netclass": "Fine",
         "pattern": "/DEBUG*"
+      },
+      {
+        "netclass": "High Current",
+        "pattern": "/supercapacitor-charger/CAP_VOLT"
       }
     ]
   },
@@ -700,7 +793,7 @@
         "uuid": "5bc9bd8c-4e85-4538-85a6-329775c75541"
       }
     ],
-    "used_designators": "J2",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
@@ -711,6 +804,10 @@
     [
       "47cfac51-04d8-415d-a41e-e76e61201f4a",
       "led-matrix"
+    ],
+    [
+      "d778569a-4163-4655-ac14-1147471aedc4",
+      "supercapacitor-charger"
     ]
   ],
   "text_variables": {},
