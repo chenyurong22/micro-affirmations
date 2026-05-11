@@ -1157,6 +1157,42 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 95.25 71.12)
+		(end 205.74 142.24)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "38582012-6cb6-474f-b017-131c06206618")
+	)
+	(text "As per the TI TPS61094 spec sheet:\n- R26, R27, and R28 must be to withing 1% resistance accuracy.\n\n- R26 = 4.75k => V(OUT) = 3.3V\n- R27 = 75.0k => I(CHG) = 250mA\n- R28 = 13.0k => V(CHG) = 2.7V"
+		(exclude_from_sim no)
+		(at 138.176 128.016 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d569385d-014e-423e-9011-caca1d382476")
+	)
+	(text "Supercapacitor Charging Circuit"
+		(exclude_from_sim no)
+		(at 96.266 140.716 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "e6ddf15b-5737-4ca4-9f77-5d643379b561")
+	)
 	(junction
 		(at 171.45 107.95)
 		(diameter 0)
@@ -1803,6 +1839,17 @@
 				)
 			)
 		)
+		(property "PN" "C0805C106K8PACTU"
+			(at 119.38 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0dd81b40-94be-4402-90ae-19f0cbaa7ba3")
 		)
@@ -1876,6 +1923,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 189.23 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PN" "CPF0603F75KC1"
 			(at 189.23 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -1968,6 +2026,17 @@
 				)
 			)
 		)
+		(property "PN" "CPF0603F13KC1"
+			(at 194.31 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "975148af-2c2b-4342-94e4-655c22557b13")
 		)
@@ -2050,6 +2119,17 @@
 				)
 			)
 		)
+		(property "PN" "C0805C106K8PACTU"
+			(at 177.8 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "df93e742-d51a-4280-8ba6-ac295b96d75e")
 		)
@@ -2122,6 +2202,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 166.37 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PN" "C0805C106K8PACTU"
 			(at 166.37 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -2294,6 +2385,17 @@
 				)
 			)
 		)
+		(property "PN" "CPF0603F4K75C1"
+			(at 107.95 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "5ee01ae5-e10f-4be1-96f7-d553ffcf35a5")
 		)
@@ -2455,6 +2557,17 @@
 				)
 			)
 		)
+		(property "PN" "MAL223051016E3"
+			(at 115.57 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "dedb6c2c-2cf1-4106-a546-b74be8ebb693")
 		)
@@ -2527,6 +2640,17 @@
 			)
 		)
 		(property "Description" ""
+			(at 146.05 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PN" "TPS61094DSSR"
 			(at 146.05 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -3003,7 +3127,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "L"
+		(property "Value" "2.2u"
 			(at 116.84 114.2999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3037,6 +3161,17 @@
 			)
 		)
 		(property "Description" "Inductor"
+			(at 115.57 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PN" "74438356022"
 			(at 115.57 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -3287,6 +3422,17 @@
 				)
 			)
 		)
+		(property "PN" "C0805C106K8PACTU"
+			(at 189.23 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "df93e742-d51a-4280-8ba6-ac295b96d760")
 		)
@@ -3358,6 +3504,17 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
+			(at 110.49 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PN" "UWT1A101MCL1GB"
 			(at 110.49 83.82 0)
 			(hide yes)
 			(show_name no)

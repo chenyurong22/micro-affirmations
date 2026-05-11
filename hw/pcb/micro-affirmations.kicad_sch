@@ -2751,9 +2751,34 @@
 		)
 		(uuid "0113be89-28a1-4890-87cd-65ac10b070c3")
 	)
+	(rectangle
+		(start 190.5 16.51)
+		(end 250.19 66.04)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "12915d51-b9b6-4c86-a814-98028b00471f")
+	)
+	(text "ST-Link Progamming Header"
+		(exclude_from_sim no)
+		(at 192.278 64.262 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "112a0021-4c6f-4490-b93d-fe0d5b0de24f")
+	)
 	(text "Power Supply"
 		(exclude_from_sim no)
-		(at 27.686 63.246 0)
+		(at 26.67 63.246 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -3297,7 +3322,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 180.34) (xy 31.75 180.34)
+			(xy 223.52 44.45) (xy 217.17 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4067,7 +4092,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 170.18) (xy 31.75 170.18)
+			(xy 223.52 34.29) (xy 217.17 34.29)
 		)
 		(stroke
 			(width 0)
@@ -4399,7 +4424,7 @@
 		(uuid "4a8e57e3-d7e6-4d48-853a-b8a48b87d7f6")
 	)
 	(label "DEBUG_SWDIO"
-		(at 31.75 172.72 0)
+		(at 217.17 36.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4610,7 +4635,7 @@
 		(uuid "9fb49537-6b68-4b6b-911d-3f020c26fa31")
 	)
 	(label "DEBUG_SWCLK"
-		(at 31.75 175.26 0)
+		(at 217.17 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4691,7 +4716,7 @@
 		(uuid "d3513398-b3d2-4a2f-ae85-f8a79a47defe")
 	)
 	(label "NRST"
-		(at 31.75 177.8 0)
+		(at 217.17 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5078,6 +5103,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 26.67 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PN" "CRG0603F5K1"
 			(at 26.67 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -5690,7 +5726,7 @@
 		(fields_autoplaced yes)
 		(uuid "6d8530af-6a70-47b7-adc7-db114ec6947c")
 		(property "Reference" "R4"
-			(at 105.41 40.6399 0)
+			(at 105.41 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5700,7 +5736,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "5.1k"
 			(at 105.41 41.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5734,6 +5770,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 107.95 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PN" "CRG0603F5K1"
 			(at 107.95 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -5817,6 +5864,17 @@
 			)
 		)
 		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 12KB RAM, 48 MHz, 2.0-3.6V, 45 GPIO, LQFP48"
+			(at 92.71 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PN" "STM32C031C6T6TR"
 			(at 92.71 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -6203,6 +6261,17 @@
 				)
 			)
 		)
+		(property "PN" "CRG0603F5K1"
+			(at 38.1 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f2068003-1a89-4bc4-8481-572ebefb4e21")
 		)
@@ -6273,6 +6342,17 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 33.02 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PN" "TL1030AF350AQJ"
 			(at 33.02 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -6522,6 +6602,17 @@
 				)
 			)
 		)
+		(property "PN" "C0805F104K1RACAUTO"
+			(at 68.58 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e8023bb9-165b-43b3-8ebe-18a0131095c0")
 		)
@@ -6761,6 +6852,17 @@
 				)
 			)
 		)
+		(property "PN" "C0805F104K1RACAUTO"
+			(at 125.73 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f75aa73b-b124-4e74-8713-d38ff1276632")
 		)
@@ -6790,7 +6892,7 @@
 		(fields_autoplaced yes)
 		(uuid "ac2a5a1c-6ffe-4a06-94ea-b88f80f79c21")
 		(property "Reference" "R5"
-			(at 105.41 48.2599 0)
+			(at 105.41 46.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6800,7 +6902,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "10k"
 			(at 105.41 49.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6834,6 +6936,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 107.95 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PN" "CRGCQ0603F10K"
 			(at 107.95 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -6916,6 +7029,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 46.99 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PN" "C0805F104K1RACAUTO"
 			(at 46.99 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -7164,6 +7288,17 @@
 				)
 			)
 		)
+		(property "PN" "2171750001"
+			(at 44.45 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "A5"
 			(uuid "138d547f-521c-42f2-b8e2-2d6a0700c2b6")
 		)
@@ -7337,6 +7472,17 @@
 				)
 			)
 		)
+		(property "PN" "C0805C475K4RACTU"
+			(at 114.3 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f75aa73b-b124-4e74-8713-d38ff1276633")
 		)
@@ -7354,7 +7500,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x05")
-		(at 26.67 175.26 180)
+		(at 212.09 39.37 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7365,7 +7511,7 @@
 		(fields_autoplaced yes)
 		(uuid "c8aad373-67ed-423d-adf9-3ebebfd574f3")
 		(property "Reference" "J2"
-			(at 26.67 163.83 0)
+			(at 212.09 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7375,7 +7521,7 @@
 			)
 		)
 		(property "Value" "DEBUG"
-			(at 26.67 166.37 0)
+			(at 212.09 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7385,7 +7531,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
-			(at 26.67 175.26 0)
+			(at 212.09 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7396,7 +7542,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 26.67 175.26 0)
+			(at 212.09 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7407,7 +7553,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 26.67 175.26 0)
+			(at 212.09 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7599,7 +7745,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 38.1 180.34 0)
+		(at 223.52 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7610,7 +7756,7 @@
 		(fields_autoplaced yes)
 		(uuid "ded71fe6-fbe3-4956-857a-698fe58c180a")
 		(property "Reference" "#PWR032"
-			(at 38.1 186.69 0)
+			(at 223.52 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7621,7 +7767,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 38.1 185.42 0)
+			(at 223.52 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7631,7 +7777,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 180.34 0)
+			(at 223.52 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7642,7 +7788,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 180.34 0)
+			(at 223.52 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7653,7 +7799,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 38.1 180.34 0)
+			(at 223.52 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7677,7 +7823,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 38.1 170.18 0)
+		(at 223.52 34.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7688,7 +7834,7 @@
 		(fields_autoplaced yes)
 		(uuid "e07c57ea-252e-4d81-89a8-7c09a11be387")
 		(property "Reference" "#PWR033"
-			(at 38.1 173.99 0)
+			(at 223.52 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7699,7 +7845,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 38.1 165.1 0)
+			(at 223.52 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7709,7 +7855,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 170.18 0)
+			(at 223.52 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7720,7 +7866,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 170.18 0)
+			(at 223.52 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7731,7 +7877,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 38.1 170.18 0)
+			(at 223.52 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
