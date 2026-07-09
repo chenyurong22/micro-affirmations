@@ -6,9 +6,133 @@
 	(paper "A4")
 	(title_block
 		(title "Supercapacitor Charger")
-		(rev "RevA")
+		(rev "RevB")
+		(company "Isaac Pawley")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -659,6 +783,195 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:SolderJumper_2_Bridged"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Bridged"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Bridged*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Bridged_0_1"
+				(rectangle
+					(start -0.508 0.508)
+					(end 0.508 -0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Bridged_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "micro-affirmations_symbols:TPS61094DSSR"
 			(pin_names
 				(offset 0.254)
@@ -1206,10 +1519,10 @@
 		(uuid "39143e47-3e9a-4640-970b-bf6a72989291")
 	)
 	(junction
-		(at 189.23 76.2)
+		(at 123.19 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6bb291d6-9b67-41f6-93b1-e541999c3552")
+		(uuid "3b8ba59d-735a-48d9-a0d5-e1d77944e91f")
 	)
 	(junction
 		(at 171.45 113.03)
@@ -1218,10 +1531,10 @@
 		(uuid "7d4c0848-d2c4-47f6-a574-a776ce724d9c")
 	)
 	(junction
-		(at 120.65 102.87)
+		(at 123.19 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "88a4be53-03a1-4601-8c24-d3f2588e0426")
+		(uuid "98bebd7a-052d-4f3e-8c5a-0005492af26d")
 	)
 	(junction
 		(at 110.49 76.2)
@@ -1230,20 +1543,22 @@
 		(uuid "a8c955be-6012-42ce-9ca9-cd8a5e3325d6")
 	)
 	(junction
+		(at 190.5 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b53cc268-e2df-4bb5-bb12-e7490e3aad17")
+	)
+	(junction
 		(at 115.57 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b650b9fb-5fb3-4041-8122-3a1a42c07e0e")
 	)
 	(junction
-		(at 120.65 105.41)
+		(at 111.76 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "da5d68e3-fdfa-410f-873d-dde3220fb8df")
-	)
-	(no_connect
-		(at 166.37 97.79)
-		(uuid "f2342a04-8686-4edb-8ca2-3dd2973de96c")
+		(uuid "fa048845-f8ae-407f-96b6-4c7277c45c67")
 	)
 	(wire
 		(pts
@@ -1267,6 +1582,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 119.38) (xy 127 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03932e1e-0e28-43c5-975b-918e9c8269ef")
+	)
+	(wire
+		(pts
 			(xy 166.37 80.01) (xy 166.37 76.2)
 		)
 		(stroke
@@ -1277,23 +1602,13 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 76.2) (xy 189.23 76.2)
+			(xy 177.8 76.2) (xy 190.5 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0cc3409e-f95d-4cef-bac1-af4e850989be")
-	)
-	(wire
-		(pts
-			(xy 120.65 102.87) (xy 125.73 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0fe12a61-61c3-4d3d-b436-c34bf48bce24")
 	)
 	(wire
 		(pts
@@ -1357,6 +1672,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 102.87) (xy 123.19 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cd37e76-ab0b-4588-8b69-fda7c6e29c9d")
+	)
+	(wire
+		(pts
 			(xy 166.37 76.2) (xy 177.8 76.2)
 		)
 		(stroke
@@ -1397,6 +1722,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 100.33) (xy 111.76 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44b025bc-890d-4a3c-9269-add241eb1563")
+	)
+	(wire
+		(pts
 			(xy 166.37 107.95) (xy 171.45 107.95)
 		)
 		(stroke
@@ -1417,17 +1752,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 105.41) (xy 120.65 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ade15f9-4e86-4df4-86df-6b61d3257c42")
-	)
-	(wire
-		(pts
-			(xy 118.11 105.41) (xy 120.65 105.41)
+			(xy 118.11 105.41) (xy 125.73 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1454,16 +1779,6 @@
 			(type default)
 		)
 		(uuid "6085183c-e743-4227-bf3d-5f244e605690")
-	)
-	(wire
-		(pts
-			(xy 125.73 105.41) (xy 120.65 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6dab8e43-5576-4f57-808a-8177b65b31d8")
 	)
 	(wire
 		(pts
@@ -1497,6 +1812,26 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 118.11) (xy 127 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7baf71e9-e8ac-4d6a-b924-e933318cba9f")
+	)
+	(wire
+		(pts
+			(xy 111.76 100.33) (xy 111.76 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dc16a1a-31b9-4377-8b4d-045cbea38dd1")
+	)
+	(wire
+		(pts
 			(xy 171.45 105.41) (xy 166.37 105.41)
 		)
 		(stroke
@@ -1504,16 +1839,6 @@
 			(type default)
 		)
 		(uuid "7ec4a59a-0eb3-48ae-bf9e-b986bb05f295")
-	)
-	(wire
-		(pts
-			(xy 189.23 76.2) (xy 189.23 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83a2ec3e-e52c-4f4d-b5f9-1b045453342c")
 	)
 	(wire
 		(pts
@@ -1527,7 +1852,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 118.11) (xy 115.57 118.11)
+			(xy 107.95 118.11) (xy 111.76 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1537,23 +1862,33 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 76.2) (xy 189.23 76.2)
+			(xy 111.76 118.11) (xy 115.57 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cbd859c8-6560-485a-92f1-4591abc79791")
+		(uuid "9d1e5061-0cc0-4045-b998-b2e0c90fc699")
 	)
 	(wire
 		(pts
-			(xy 120.65 102.87) (xy 120.65 100.33)
+			(xy 190.5 76.2) (xy 195.58 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cd399afe-dca5-4b0e-90b2-3c888d76102b")
+		(uuid "b3b2b75a-8a24-4feb-b503-80d83c478d23")
+	)
+	(wire
+		(pts
+			(xy 123.19 100.33) (xy 123.19 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce6d63e8-f00d-45e8-b936-4609021e3870")
 	)
 	(wire
 		(pts
@@ -1577,7 +1912,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 100.33) (xy 125.73 100.33)
+			(xy 123.19 100.33) (xy 125.73 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1627,7 +1962,7 @@
 	)
 	(global_label "CAP_VOLT"
 		(shape input)
-		(at 111.76 118.11 180)
+		(at 107.95 118.11 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1637,7 +1972,7 @@
 		)
 		(uuid "10ec8354-ff7f-4040-b147-1e97655cafcc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.7638 118.11 0)
+			(at 95.9538 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2318,6 +2653,165 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 127 127 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59c61db1-7e47-4ce3-abf2-d7046dce0a85")
+		(property "Reference" "#PWR041"
+			(at 127 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ab976e8e-2813-4942-9e9b-6641231b7f9d")
+		)
+		(instances
+			(project "micro-affirmations"
+				(path "/5bc9bd8c-4e85-4538-85a6-329775c75541/d778569a-4163-4655-ac14-1147471aedc4"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Bridged")
+		(at 118.11 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "66ab1931-9b65-4d8b-98f6-eacc28a4c39c")
+		(property "Reference" "JP1"
+			(at 118.11 102.616 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Bridged"
+			(at 118.11 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
+			(at 118.11 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 118.11 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a5d73726-b7a8-4737-a5ad-c7c2dfe2960f")
+		)
+		(pin "1"
+			(uuid "92886cb5-bcd2-4d72-93c8-e86528a533ec")
+		)
+		(instances
+			(project "micro-affirmations"
+				(path "/5bc9bd8c-4e85-4538-85a6-329775c75541/d778569a-4163-4655-ac14-1147471aedc4"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 107.95 104.14 0)
 		(mirror x)
@@ -2868,6 +3362,86 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 166.37 97.79 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "82ab6aea-ec68-4085-a845-011c546249ee")
+		(property "Reference" "#PWR044"
+			(at 172.72 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 170.7882 97.7899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 166.37 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 166.37 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1978660a-947e-44cc-8c22-08a6f4fc2374")
+		)
+		(instances
+			(project "micro-affirmations"
+				(path "/5bc9bd8c-4e85-4538-85a6-329775c75541/d778569a-4163-4655-ac14-1147471aedc4"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 177.8 87.63 0)
 		(mirror y)
 		(unit 1)
@@ -3104,6 +3678,99 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 127 123.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9b09c28-7d04-44b1-9d62-fb0bc98193fa")
+		(property "Reference" "C9"
+			(at 130.81 121.9199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 130.81 124.4599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 127.9652 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 127 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PN" "C0805C106K8PACTU"
+			(at 127 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3c9e68c1-dd9b-4d74-b5c2-30a00b64f3f7")
+		)
+		(pin "2"
+			(uuid "679a824b-4f14-4540-81fa-f1055e8fd26d")
+		)
+		(instances
+			(project "micro-affirmations"
+				(path "/5bc9bd8c-4e85-4538-85a6-329775c75541/d778569a-4163-4655-ac14-1147471aedc4"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L")
 		(at 115.57 113.03 0)
 		(mirror y)
@@ -3199,85 +3866,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 189.23 87.63 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b4fc2875-557e-486e-bb2a-1803e3a5ec30")
-		(property "Reference" "#PWR041"
-			(at 189.23 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 189.23 92.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 189.23 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 189.23 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 189.23 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4269e56a-a045-469c-956d-59c90058a5c9")
-		)
-		(instances
-			(project "micro-affirmations"
-				(path "/5bc9bd8c-4e85-4538-85a6-329775c75541/d778569a-4163-4655-ac14-1147471aedc4"
-					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 110.49 87.63 0)
 		(mirror y)
 		(unit 1)
@@ -3356,8 +3944,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 189.23 83.82 0)
+		(lib_id "Connector:TestPoint")
+		(at 190.5 76.2 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3365,32 +3953,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ecf3554f-fb4b-4542-bcdc-5f35dd2355b1")
-		(property "Reference" "C9"
-			(at 193.04 82.5499 0)
+		(uuid "db1d8960-d9d4-43ef-bd0a-1e56ddcabc8b")
+		(property "Reference" "TP3"
+			(at 190.5 81.788 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "10u"
-			(at 193.04 85.0899 0)
+		(property "Value" "TestPoint"
+			(at 193.04 80.7719 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 190.1952 87.63 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 185.42 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3401,7 +3988,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 83.82 0)
+			(at 185.42 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3411,19 +3998,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 189.23 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PN" "C0805C106K8PACTU"
-			(at 189.23 83.82 0)
+		(property "Description" "test point"
+			(at 190.5 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3434,15 +4010,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "df93e742-d51a-4280-8ba6-ac295b96d760")
-		)
-		(pin "2"
-			(uuid "81695c5d-14a4-4b12-9e69-720156b83295")
+			(uuid "a2763e40-5206-4b1c-b3c2-21a1d1dde8bb")
 		)
 		(instances
 			(project "micro-affirmations"
 				(path "/5bc9bd8c-4e85-4538-85a6-329775c75541/d778569a-4163-4655-ac14-1147471aedc4"
-					(reference "C9")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
