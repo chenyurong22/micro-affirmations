@@ -9,36 +9,89 @@ Author: Isaac Pawley
 
 #include "stm32c0xx_hal.h"
 
-typedef enum {
-    MATRIX_K0,
-    MATRIX_K1,
-    MATRIX_K2,
-    MATRIX_K3,
-    MATRIX_K4,
-    MATRIX_K5,
-    MATRIX_K6,
-    MATRIX_K7,
-    MATRIX_K8,
-    MATRIX_K9,
-    NUM_CATHODES
-} matrixCathodes;
+#define PHYSICAL_ROWS 5
+#define PHYSICAL_COLS 20
 
-typedef enum {
-    MATRIX_A0,
-    MATRIX_A1,
-    MATRIX_A2,
-    MATRIX_A3,
-    MATRIX_A4,
-    MATRIX_A5,
-    MATRIX_A6,
-    MATRIX_A7,
-    MATRIX_A8,
-    MATRIX_A9,
-    NUM_ANODES
-} matrixAnodes;
+#define ELECTRICAL_ROWS 10
+#define ELECTRICAL_COLS 10
+
+MatrixBrightness_t frame[ELECTRICAL_ROWS][ELECTRICAL_COLS] = {0};
 
 typedef struct {
 	GPIO_TypeDef* const port;
 	const uint16_t pin;
 	const GPIO_PinState activeState;
-} matrix_t;
+} LedPinConfig_t;
+
+LedPinConfig_t rows[ELECTRICAL_ROWS] = {
+    {GPIOB, GPIO_PIN_11, GPIO_PIN_SET},
+    {GPIOB, GPIO_PIN_10, GPIO_PIN_SET},
+    {GPIOB, GPIO_PIN_2, GPIO_PIN_SET},
+    {GPIOB, GPIO_PIN_1, GPIO_PIN_SET},
+    {GPIOB, GPIO_PIN_0, GPIO_PIN_SET},
+    {GPIOA, GPIO_PIN_7, GPIO_PIN_SET},
+    {GPIOA, GPIO_PIN_6, GPIO_PIN_SET},
+    {GPIOA, GPIO_PIN_5, GPIO_PIN_SET},
+    {GPIOA, GPIO_PIN_4, GPIO_PIN_SET},
+    {GPIOA, GPIO_PIN_3, GPIO_PIN_SET}
+};
+
+LedPinConfig_t columns[ELECTRICAL_COLS] = {
+    {GPIOA, GPIO_PIN_12, GPIO_PIN_RESET},
+    {GPIOA, GPIO_PIN_11, GPIO_PIN_RESET},
+    {GPIOA, GPIO_PIN_10, GPIO_PIN_RESET},
+    {GPIOC, GPIO_PIN_7, GPIO_PIN_RESET},
+    {GPIOC, GPIO_PIN_6, GPIO_PIN_RESET},
+    {GPIOA, GPIO_PIN_9, GPIO_PIN_RESET},
+    {GPIOA, GPIO_PIN_8, GPIO_PIN_RESET},
+    {GPIOB, GPIO_PIN_15, GPIO_PIN_RESET},
+    {GPIOB, GPIO_PIN_14, GPIO_PIN_RESET},
+    {GPIOB, GPIO_PIN_13, GPIO_PIN_RESET}
+};
+
+void matrix_setPixel(uint8_t physX, uint8_t physY, MatrixBrightness_t value) {
+    if (physX >= PHYSICAL_COLS || physY >= PHYSICAL_ROWS) {
+        return;
+    }
+
+    uint8_t elecRow = 0;
+    uint8_t elecCol = 0;
+
+    if (physX < 10) {
+        elecRow = physY;
+        elecCol = physX;
+    } else {
+        elecRow = physY + 5;
+        elecCol = 19 - physX;
+    }
+
+    frame[elecRow][elecCol] = value;
+}
+
+
+void matrix_updateMultiplex_NonBlocking(void) {
+    static uint8_t currentElecRow = 0;
+
+    HAL_GPIO_WritePin(rows[currentElecRow].port, rows[currentElecRow].pin, rows[currentElecRow].activeState == GPIO_PIN_SET ? GPIO_PIN_RESET : GPIO_PIN_SET);
+
+    currentElecRow++;
+    if (currentElecRow >= ELECTRICAL_ROWS) {
+        currentElecRow = 0;
+    }
+
+    for (uint8_t col = 0; col < ELECTRICAL_COLS; col++) {
+        GPIO_PinState state;
+        
+        if (frame[currentElecRow][col] == MATRIX_ON) {
+            state = columns[col].activeState;
+        } else {
+            state = (columns[col].activeState == GPIO_PIN_SET) ? GPIO_PIN_RESET : GPIO_PIN_SET;
+        }
+        
+        HAL_GPIO_WritePin(columns[col].port, columns[col].pin, state);
+    }
+
+    HAL_GPIO_WritePin(rows[currentElecRow].port, rows[currentElecRow].pin, rows[currentElecRow].activeState);
+}
+
+
