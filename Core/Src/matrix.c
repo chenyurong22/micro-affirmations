@@ -9,9 +9,6 @@ Author: Isaac Pawley
 
 #include "stm32c0xx_hal.h"
 
-#define PHYSICAL_ROWS 5
-#define PHYSICAL_COLS 20
-
 #define ELECTRICAL_ROWS 10
 #define ELECTRICAL_COLS 10
 
@@ -69,7 +66,7 @@ void matrix_setPixel(uint8_t physX, uint8_t physY, MatrixBrightness_t value) {
 }
 
 
-void matrix_updateMultiplex_NonBlocking(void) {
+void matrix_updateMultiplex(void) {
     static uint8_t currentElecRow = 0;
 
     HAL_GPIO_WritePin(rows[currentElecRow].port, rows[currentElecRow].pin, rows[currentElecRow].activeState == GPIO_PIN_SET ? GPIO_PIN_RESET : GPIO_PIN_SET);
