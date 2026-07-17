@@ -18,7 +18,7 @@ typedef enum {
     MATRIX_ON  = 1
 } MatrixBrightness_t;
 
-void matrix_setPixel(uint8_t physX, uint8_t physY, MatrixBrightness_t value);
+void matrix_setPixel(int16_t physX, int16_t physY, MatrixBrightness_t value);
 void matrix_updateMultiplex(void);
 
 #endif /* INC_MATRIX_H_ */

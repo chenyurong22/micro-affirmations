@@ -10,7 +10,8 @@ Author: Isaac Pawley
 
 #include "fonts.h"
 
-void nanoGL_drawString(uint8_t x, uint8_t y, const char *text, const Font_t *font);
+uint16_t nanoGL_stringWidth(const char *text, const Font_t *font);
+void nanoGL_drawString(int16_t x, int16_t y, const char *text, const Font_t *font);
 void nanoGL_clear(void);
 
 #endif /* INC_NANOGL_H_ */

@@ -46,8 +46,8 @@ LedPinConfig_t columns[ELECTRICAL_COLS] = {
     {GPIOB, GPIO_PIN_13, GPIO_PIN_RESET}
 };
 
-void matrix_setPixel(uint8_t physX, uint8_t physY, MatrixBrightness_t value) {
-    if (physX >= PHYSICAL_COLS || physY >= PHYSICAL_ROWS) {
+void matrix_setPixel(int16_t physX, int16_t physY, MatrixBrightness_t value) {
+    if (physX >= PHYSICAL_COLS || physY >= PHYSICAL_ROWS || physX < 0 || physY < 0) {
         return;
     }
 

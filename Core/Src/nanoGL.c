@@ -13,7 +13,23 @@ Author: Isaac Pawley
 #define FONT_FIRST_CHAR 32
 #define FONT_LAST_CHAR  126
 
-static void nanoGL_drawChar(uint8_t x, uint8_t y, char c, const Font_t *font) {
+uint16_t nanoGL_stringWidth(const char *text, const Font_t *font) {
+    uint16_t width = 0;
+
+    while (*text) {
+        uint8_t index = (uint8_t)*text - FONT_FIRST_CHAR;
+
+        if (index <= (FONT_LAST_CHAR - FONT_FIRST_CHAR)) {
+            width += font->char_width[index];
+        }
+        width++;
+        text++;
+    }
+
+    return width;
+}
+
+static void nanoGL_drawChar(int16_t x, int16_t y, char c, const Font_t *font) {
     if ((uint8_t)c < FONT_FIRST_CHAR || (uint8_t)c > FONT_LAST_CHAR) {
         c = '?';
     }
@@ -31,7 +47,7 @@ static void nanoGL_drawChar(uint8_t x, uint8_t y, char c, const Font_t *font) {
     }
 }
 
-void nanoGL_drawString(uint8_t x, uint8_t y, const char *text, const Font_t *font) {
+void nanoGL_drawString(int16_t x, int16_t y, const char *text, const Font_t *font) {
     while (*text) {
         uint8_t index = (uint8_t)*text - FONT_FIRST_CHAR;
 
