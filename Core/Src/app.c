@@ -52,30 +52,27 @@ uint16_t ADC_Read(ADC_Input_t input)
 
 void app_main(void) {
 
-    char c = ' ';
-
     uint32_t now = 0;
     uint32_t next = 0;
 
     nanoGL_clear();
 
+    static int16_t scrollX = PHYSICAL_COLS;
+
     while (1) {
+        matrix_updateMultiplex();
 
         if (HAL_GetTick() > next) {
-            next = HAL_GetTick() + 250;
+            next = HAL_GetTick() + 75;
             nanoGL_clear();
-            char str[3] = { c, '|', '\0' };
-            nanoGL_drawString(0, 0, str, &Font_5x5);
 
-            c++;
-
-            // wrap back to space after '~'
-            if (c > '~') {
-                c = ' ';
+            nanoGL_drawString(scrollX, 0, "Here is a long message...", &Font_5x5);
+            scrollX--;
+            
+            if (scrollX < -nanoGL_stringWidth("Here is a long message...", &Font_5x5)) {
+                scrollX = PHYSICAL_COLS;
             }
         }
-
-        matrix_updateMultiplex();
 
         now = HAL_GetTick();
         while (HAL_GetTick() < now + 1) {};
